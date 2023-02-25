@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-slate-200">
+
+  <div class="main h-screen w-screen  justify-center flex items-center">
+
+    <div class="maincard h-[65%] w-[50%] bg-white shadow-lg flex rounded-lg ">
+
+
+      <!-- Left side start -->
+      <div class="left-side p-3  w-52">
+
+        <img class="absolute" src="assets/images/bg-sidebar-desktop.svg" alt="">
+
+       <!-- step 1 -->
+       <div class="step1 flex absolute p-5 items-center">
+        <div class="round h-6 w-6 rounded-full bg-slate-100 text-center font-bold text-sm justify-center flex items-center">1</div>
+        <div class="text ml-3">
+          <p class="text-[16px] text-white ">STEP 1</p>
+          <p class="font-bold text-white text-xs">YOUR INFO</p>
+        </div>
+       </div>
+
+       
+       <!-- step 2 -->
+       <div class="step1 flex absolute p-5 items-center mt-14">
+        <div class="round h-6 w-6 rounded-full border-2 border-cyan-50 text-white text-center font-bold text-sm justify-center flex items-center">2</div>
+        <div class="text ml-3">
+          <p class="text-[16px] text-white ">STEP 2</p>
+          <p class="font-bold text-white text-xs">SELECT PLAN</p>
+        </div>
+       </div>
+
+           
+       <!-- step 3 -->
+       <div class="step1 flex absolute p-5 items-center mt-28">
+        <div class="round h-6 w-6 rounded-full border-2 border-cyan-50 text-white text-center font-bold text-sm justify-center flex items-center">3</div>
+        <div class="text ml-3">
+          <p class="text-[16px] text-white ">STEP 3</p>
+          <p class="font-bold text-white text-xs">ADD ONS</p>
+        </div>
+       </div>
+
+              
+       <!-- step 4 -->
+       <div class="step1 flex absolute p-5 items-center mt-40">
+        <div class="round h-6 w-6 rounded-full border-2 border-cyan-50 text-white text-center font-bold text-sm justify-center flex items-center">4</div>
+        <div class="text ml-3">
+          <p class="text-[16px] text-white ">STEP 4</p>
+          <p class="font-bold text-white text-xs">SUMMERY</p>
+        </div>
+       </div>
+      </div>
+      <!-- Left side end -->
+  
+
+
+      <!-- Right side start form 1 -->
+      <div id="step1" class="right-side  ml-12 p-8 z-10 ">
+        <p class="font-bold text-lg text-[#052B5A]">Personal Info</p>
+        <p class="text-zinc-500 text-[18px]">Please provide your name, email address, and phone number.</p>
+      <div class="input mt-4">
+        <p class="text-[18px]">Name</p>
+        <input type="text" required placeholder="e.g. Stephen King" class=" border-2 rounded-md w-[500px] text-[18px] p-1 font-medium" >
+      </div>
+      <div class="input mt-4">
+        <p class="text-[18px]">Email address</p>
+        <input type="text" required placeholder="e.g. stephenking@lorem.com" class=" border-2 rounded-md w-[500px] text-[18px] p-1 font-medium" >
+      </div>
+      <div class="input mt-4">
+        <p class="text-[18px]">Phone Number</p>
+        <input type="text" required placeholder="e.g. +1 234 567 890" class=" border-2 rounded-md w-[500px] text-[18px] p-1 font-medium" >
+      </div>
+      <div id="btn1" class="button bg-[#052B5A] h-[45px] w-20 text-white rounded-md text-center p-1 text-xs mt-[100px] ml-56 cursor-pointer ">Next Step</div>
+     
+      </div>
+      <!-- Right side end -->
+
+
+         <!-- Right side start form 1 -->
+         <div id="step2" class="right-side  ml-12 p-8  ">
+
+
+          <p class="font-bold text-lg text-[#052B5A]">Select your plan</p>
+          <p class="text-zinc-500 text-[18px]">Please provide your name, email address, and phone number.</p>
+  
+        <div class="input mt-4">
+          <p class="text-[18px]">Name</p>
+          <input type="text" required placeholder="e.g. Stephen King" class=" border-2 rounded-md w-[500px] text-[18px] p-1 font-medium" >
+        </div>
+    
+  
+        <div class="input mt-4">
+          <p class="text-[18px]">Email address</p>
+          <input type="text" required placeholder="e.g. stephenking@lorem.com" class=" border-2 rounded-md w-[500px] text-[18px] p-1 font-medium" >
+        </div>
+       
+        <div class="input mt-4">
+          <p class="text-[18px]">Phone Number</p>
+          <input type="text" required placeholder="e.g. +1 234 567 890" class=" border-2 rounded-md w-[500px] text-[18px] p-1 font-medium" >
+        </div>
+  
+        <div id="btn2" class="button bg-[#052B5A] h-[45px] w-20 text-white rounded-md text-center p-1 text-xs mt-[100px] ml-56 cursor-pointer ">Next Step</div>
+       
+        
+        </div>
+        <!-- Right side end -->
+  
+
+
+
+    </div>
+
+         
+  
+  </div>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
